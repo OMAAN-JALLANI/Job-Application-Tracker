@@ -1,0 +1,78 @@
+
+.btn{
+     width: 160px;
+    height: 50px;
+    background-color: #323131;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    margin-top: 20px;
+}
+.btn:hover{
+    border: 2px solid #444343;
+    background-color: white;
+    color: #323131;
+    }
+
+    .signup-btn:hover{
+border: 2px solid #323131;
+    background-color: white;
+    color: #323131;
+    }
+
+    .add{
+        height: 35px;
+        width: 110px;
+         background-color: white;
+            border: 1px solid #949393;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer; 
+    }
+    .add:hover{
+        background-color:#bababa;
+        border: none;
+        color: #323131; 
+    }
+     .bck{
+        height: 35px;
+        width: 35px;
+        background-color:  #323131;
+            border: 1px solid #949393;
+            border-radius: 5px; 
+            cursor: pointer; 
+     }
+.bck:hover{
+        background: color #57575771;;
+        border: none;
+        color: #323131; 
+    }
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ .wrapper::-webkit-scrollbar{
+    visibility: hidden;
+    width: 1px;
+ }
+ .wrapper::-webkit-scrollbar-thumb{
+    background: none;
+ }
