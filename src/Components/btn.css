@@ -1,25 +1,17 @@
 
 .btn{
-     width: 160px;
+     width: 200px;
     height: 50px;
-    background-color: #323131;
-    color: white;
+    background-color: white;
+    color: black;
     border: none;
-    border-radius: 5px;
+    border-radius: 30px;
     font-size: 20px;
     margin-top: 20px;
 }
-.btn:hover{
-    border: 2px solid #444343;
-    background-color: white;
-    color: #323131;
-    }
+ 
 
-    .signup-btn:hover{
-border: 2px solid #323131;
-    background-color: white;
-    color: #323131;
-    }
+    
 
     .add{
         height: 35px;
@@ -49,30 +41,46 @@ border: 2px solid #323131;
         color: #323131; 
     }
  
+    @media  (max-width: 768px) {
+    
+        .btn{
+            width: 120px;
+            height: 40px;
+            font-size: 16px;
+        }
+        .add{
+            height: 30px;
+            width: 90px;
+             font-size: 14px;
+        }
+         .bck{
+            height: 30px;
+            width: 30px; 
+         }
+        
+.hero{
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+  .hero-left, .hero-right {
+    width: 100%;
+    max-width: 400px;
+    margin: 10px 0;
+  }
+}
+    
+
+.orb-container {
+    background-color: black;
+  position: fixed;        /* 👈 full screen fixed background */
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;             /* 👈 sabse neeche layer */
+  pointer-events: none;   /* 👈 mouse click upar walay components par jaaye */
+}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- .wrapper::-webkit-scrollbar{
-    visibility: hidden;
-    width: 1px;
- }
- .wrapper::-webkit-scrollbar-thumb{
-    background: none;
- }
+    

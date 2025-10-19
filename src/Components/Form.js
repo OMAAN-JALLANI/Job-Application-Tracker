@@ -28,11 +28,12 @@ export default function Form({ back, jobdata }) {
   const inputStyle = {
     outline: "none",
     border: "none",
-    borderBottom: "2px solid #555",
+    borderBottom: "2px solid rgba(176, 187, 239, 0.6)",
     width: "100%",
     fontSize: "16px",
     padding: "6px 5px",
     backgroundColor: "transparent",
+    color: "rgb(235, 235, 236)",
   };
 
   const sectionStyle = {
@@ -45,38 +46,63 @@ export default function Form({ back, jobdata }) {
   const labelStyle = {
     fontSize: "18px",
     fontWeight: "500",
-    color: "#2f2f2f",
+    color: "white",
+    letterSpacing: "0.5px",
   };
 
   const iconStyle = {
-    color: "#323131",
+    color: "rgb(134, 173, 252)",
     marginRight: "10px",
   };
 
   return (
-    <div style={{ fontFamily: "Inter, sans-serif", backgroundColor: "#f8f8f8", minHeight: "100vh", paddingTop: "20px" }}>
+    <div
+      style={{
+        fontFamily: "Inter, sans-serif",
+        backgroundColor: "none",
+        Height: "500px", 
+        color: "white",
+      }}
+    >
+      {/* 🔹 Heading */}
       <div
         style={{
           textAlign: "center",
-          color: "#2f2f2f",
-          marginBottom: "20px",
+          color: "white",
+          marginBottom: "30px",
         }}
       >
-        <h1 style={{ fontSize: "42px", letterSpacing: "1px" }}>
-          <FontAwesomeIcon icon={faPen} style={{ color: "#323131", fontSize: "40px" }} /> ADD NEW JOB
+        <h1
+          style={{
+            marginTop: "0px",
+            fontSize: "42px",
+            letterSpacing: "1px",
+            textShadow: "0 0 12pxrgba(0, 4, 255, 0.33)",
+          }}
+        >
+          <FontAwesomeIcon
+            icon={faPen}
+            style={{ color: "white", fontSize: "40px" }}
+          />{" "}
+          ADD NEW JOB
         </h1>
       </div>
 
+      {/* 🔹 Main Form Box */}
       <div
         style={{
-          backgroundColor: "white",
-          width: "55%",
-          margin: "auto",
+          backgroundColor: "rgba(39, 39, 39, 0.32)",
+          backdropFilter:"blur(10px)",
+          width: "30%",
+          margin: "auto", 
+          marginTop:"-20px",
           borderRadius: "12px",
-          padding: "40px 60px",
-          boxShadow: "0px 5px 20px rgba(0,0,0,0.1)",
+          padding: "10px 60px",
+          boxShadow: "0px 0px 25px rgba(86, 142, 255, 0.18) ",
+          border: "1px solid rgba(86, 142, 255, 0.20)",
         }}
       >
+        {/* Inputs */}
         <div style={sectionStyle}>
           <label style={labelStyle}>Company Name:</label>
           <div style={{ display: "flex", alignItems: "center" }}>
@@ -150,31 +176,39 @@ export default function Form({ back, jobdata }) {
         </div>
       </div>
 
+      {/* 🔹 Buttons */}
       <div
         style={{
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
           gap: "20px",
-          marginTop: "30px",
+          marginTop: "10px",
         }}
       >
         <button
           onClick={Savedata}
           style={{
-            height: "43px",
+            height: "35px",
             width: "130px",
-            backgroundColor: "#323131",
-            color: "white",
+            backgroundColor: "rgb(86, 143, 255)",
+            color: "black",
             border: "none",
             borderRadius: "8px",
             fontSize: "17px",
-            fontWeight: "500",
+            fontWeight: "600",
             cursor: "pointer",
-            transition: "0.2s",
+            boxShadow: "0 0 10px rgba(86, 142, 255, 0.37)",
+            transition: "0.3s",
           }}
-          onMouseEnter={(e) => (e.target.style.backgroundColor = "#505050")}
-          onMouseLeave={(e) => (e.target.style.backgroundColor = "#323131")}
+          onMouseEnter={(e) => {
+            e.target.style.boxShadow = "0 0 20px rgb(86, 143, 255)";
+            e.target.style.transform = "scale(1.05)";
+          }}
+          onMouseLeave={(e) => {
+            e.target.style.boxShadow = "0 0 10px rgb(86, 143, 255)";
+            e.target.style.transform = "scale(1)";
+          }}
         >
           <FontAwesomeIcon icon={faSave} /> Save
         </button>
@@ -182,19 +216,28 @@ export default function Form({ back, jobdata }) {
         <button
           onClick={() => back(false)}
           style={{
-            height: "43px",
+            height: "35px",
             width: "130px",
-            backgroundColor: "white",
-            color: "#323131",
-            border: "2px solid #323131",
+            backgroundColor: "transparent",
+            color: "white",
+            border: "2px solid white",
             borderRadius: "8px",
             fontSize: "17px",
-            fontWeight: "500",
+            fontWeight: "600",
             cursor: "pointer",
-            transition: "0.2s",
+            transition: "0.3s",
+            boxShadow: "0 0 8px rgba(86, 142, 255, 0.18)",
           }}
-          onMouseEnter={(e) => (e.target.style.backgroundColor = "#323131", e.target.style.color = "white")}
-          onMouseLeave={(e) => (e.target.style.backgroundColor = "white", e.target.style.color = "#323131")}
+          onMouseEnter={(e) => {
+            e.target.style.backgroundColor = "white";
+            e.target.style.color = "black";
+            e.target.style.boxShadow = "0 0 20px white";
+          }}
+          onMouseLeave={(e) => {
+            e.target.style.backgroundColor = "transparent";
+            e.target.style.color = "white";
+            e.target.style.boxShadow = "0 0 8px rgba(86, 142, 255, 0.18)";
+          }}
         >
           <FontAwesomeIcon icon={faCancel} /> Cancel
         </button>
