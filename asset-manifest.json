@@ -1,16 +1,15 @@
 {
   "files": {
-    "main.css": "/Job-Application-Tracker/static/css/main.dfaf8f9b.css",
-    "main.js": "/Job-Application-Tracker/static/js/main.139dafe4.js",
+    "main.css": "/Job-Application-Tracker/static/css/main.539dce44.css",
+    "main.js": "/Job-Application-Tracker/static/js/main.656f342c.js",
     "static/js/453.b1b53582.chunk.js": "/Job-Application-Tracker/static/js/453.b1b53582.chunk.js",
-    "static/media/logoo.webp": "/Job-Application-Tracker/static/media/logoo.7fbcd33e2a2f1e8c4576.webp",
     "index.html": "/Job-Application-Tracker/index.html",
-    "main.dfaf8f9b.css.map": "/Job-Application-Tracker/static/css/main.dfaf8f9b.css.map",
-    "main.139dafe4.js.map": "/Job-Application-Tracker/static/js/main.139dafe4.js.map",
+    "main.539dce44.css.map": "/Job-Application-Tracker/static/css/main.539dce44.css.map",
+    "main.656f342c.js.map": "/Job-Application-Tracker/static/js/main.656f342c.js.map",
     "453.b1b53582.chunk.js.map": "/Job-Application-Tracker/static/js/453.b1b53582.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.dfaf8f9b.css",
-    "static/js/main.139dafe4.js"
+    "static/css/main.539dce44.css",
+    "static/js/main.656f342c.js"
   ]
 }
