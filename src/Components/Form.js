@@ -77,7 +77,7 @@ export default function Form({ back, jobdata }) {
             marginTop: "0px",
             fontSize: "42px",
             letterSpacing: "1px",
-            textShadow: "0 0 12pxrgba(0, 4, 255, 0.33)",
+            textShadow: "0 0 12px rgba(0, 4, 255, 0.33)",
           }}
         >
           <FontAwesomeIcon
