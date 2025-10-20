@@ -22,10 +22,8 @@
             padding: 10px 20px;
             cursor: pointer; 
     }
-    .add:hover{
-        background-color:#bababa;
-        border: none;
-        color: #323131; 
+    .dd:active{
+        visibility: hidden;
     }
      .bck{
         height: 35px;
